@@ -78,7 +78,8 @@ function draw() {
     stroke("#95d5b2");
     noFill();
     strokeWeight(2);
-    circle(windowWidth/2.6, windowHeight/3, windowWidth*0.2); //positions circle in the top right quadrant
+    circle(windowWidth/2.6, windowHeight/3, mainrect*2.5); //positions circle in the top right quadrant
+    //use mainrect for scaling to make it more responsive
 
     //cross 1 top left quadrant
     stroke("#40916c");
@@ -98,8 +99,9 @@ function draw() {
     stroke("#40916c");
     noFill();
     strokeWeight(2);
-    circle(windowWidth/1.25, mainrect+130, windowWidth*0.13); //positions circle in the top left quadrant almost toucing cross 2 and shape 3
+    circle(windowWidth/1.25, mainrect+130, mainrect*2); //positions circle in the top left quadrant almost toucing cross 2 and shape 3
     // y is the same as bottom of cross 2
+    //use mainrect for scaling to make it more responsive
 
     //shape 4 trapezoid in bottom left quadrant
     fill("#95d5b2");
@@ -177,8 +179,5 @@ function draw() {
 
     // most issues i had in scaling down, where the shapes gets squashed regardless of the formulas i enter, because i can only edit from either width or height perspective, not both
     // scaling up seems to be smooth 
-
-
-    console.log(mouseX/width + " " + mouseY/height); // to find the px or % of stuff
 
 }

@@ -1,3 +1,5 @@
+// artwork is FOUR SPACES WITH BROKEN CROSS, plate 14 from ART D'AUJOURD'HUI, MAÎTRES DE L'ART ABSTRAIT: Album I.
+
 let mainrect; 
 let xbound;
 function setup() {

@@ -84,6 +84,8 @@ function draw() {
   vertex(ghost/2, ghost/2);  
   vertex(ghost/2,0); // right line
   endShape();
+  //had to use division instead of addition to make it more scalable incase of change to ghost size
+  //removed stroke to make the ghost shape cleaner
 
   fill("white");
   noStroke();

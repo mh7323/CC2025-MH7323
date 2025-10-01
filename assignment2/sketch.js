@@ -20,10 +20,11 @@ function draw() {
   pacman = 50; // the size that pacman will be
 
   let xgap;
-  xgap = 2; // the gap in x axis
+  xgap = 2; // the gap in between each pacman x axis
   let ygap
-  ygap = 2 // the gap in y axis 
+  ygap = 2 // the gap in between each pacman y axis 
 
+  // creating the variables
   let mouthclose;
   let hue;
   let sat;

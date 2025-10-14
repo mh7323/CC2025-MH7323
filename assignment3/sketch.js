@@ -4,6 +4,9 @@ let s2 = -1;
 let drop;
 let theta = 0;
 let circley;
+let op = 0;
+let currenthour;
+let lasthour = -1;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -105,17 +108,40 @@ function draw() {
   endShape(CLOSE);
 
   // made to write the displacement of the plant, to be inputted into the y axis of the plant elements
-  let d = map(minute(),0,6000,0,windowHeight-100); // it doesnt stop on the window height and doesnt refresh
+  let d = map(minute(),0,60,0,windowHeight-300); // it doesnt stop on the window height and doesnt refresh; fixed issue by reducing the bound to windowheight-300
   displacement = d;
+
+  //alterations of the background every hour to simulate night and day
+  fill(0,0,0,op);
+  rect(0,0,windowWidth, windowHeight);
+
+  // by using this if loop, it tests that if the current hour isnt the same as the last hour
+  // the opacity will change depending on the time of day 
+  // increasing opacity from 6pm-midnight and decreasing from midnight to 6am
+  let currenthour = hour();
+  if(currenthour != lasthour){
+    if(currenthour>18){
+      op = op+10;
+    }  else if(currenthour<6){
+      op = op-10;
+    }  else {
+      op = 0;
+    }
+    lasthour = currenthour;
+
+  }
+
+  
   
   //plant that grows every day
   // calls functions drawLeaf and drawStem
   drawLeaf(200,windowHeight-200-displacement,radians(60),100); // draws the right leaf, used number instead of scale so that it will always be somewhat towards the left of the screen
   drawLeaf(200,windowHeight - 200-displacement,radians(300),100); // draws the left leaf, used number instead of scale so that it will always be somewhat towards the left of the screen
-  drawStem(200, windowHeight - 200-displacement, windowWidth - windowWidth, windowHeight);
-  //circlex = cos(radians(thetax))*radiusx; 
-    //thetax++; //++ means add to existing avr
+  drawStem(200, windowHeight - 200-displacement,windowWidth - windowWidth, windowHeight);
   
+  
+
+  // water droplet that drops every second
   circley = cos(radians(180))*20; // need help with this, i dont know how to make the water drop down in a fluid motion
   theta++;
   

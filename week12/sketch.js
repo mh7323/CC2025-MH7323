@@ -60,15 +60,7 @@ function draw() {
   ellipse(bulbX, bulbY, 100, 100);
  
   
-  // Draw the lightbulb
-  fill(255, 255, 100);
-  ellipse(bulbX, bulbY, bulbRadius * 2, bulbRadius * 2);
 
-  
-   fill('orange')
-  textAlign(CENTER)
-  textSize(12)
-  text("light source", bulbX, bulbY);
   
   // Draw the string of the lightbulb
   stroke(0);
@@ -217,7 +209,7 @@ class Root {
     // Append current position to segments to keep history
     this.segments.push({ x: this.x, y: this.y, size: this.size });
 
-    // Attraction towards the blue glow
+    // Attraction towards the sun
     let glowAttractionX = (blueGlowX - this.x) / 10000;
     let glowAttractionY = (blueGlowY - this.y) / 10000;
     this.xrandomizer += glowAttractionX;

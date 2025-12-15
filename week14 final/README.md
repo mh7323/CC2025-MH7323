@@ -1,61 +1,15 @@
-# template
+# Matthew Hope CC Final Project
 
----
+My final project is inpsired by a phenomenon in nature called phototropism. With my background in agricultural
+sciences, I am familiar with these concepts and I wanted to bring that to life with p5.js. The concept behind
+the project is having a sun that is trackable by a person's finger, imitating a mirror as well as grass/plants
+that lean and respond to the sun's location and grow when close to the sun. When static, the plants will sway in
+the sun. 
 
-This is a README file that can be used to describe and document your assignment.
+This project was challenging for me as I think it really got a lot deeper than the past projects I have done for 
+this class. There was no instructions or guidelines on how to do it so I had to use references and teach myself how 
+to achieve the look that I wanted to achieve. I think the most challenging aspect was creating the plants and also
+making them grow and lean in a way that is most natural but also cool.
 
-Markdown Cheatsheet (from [https://www.markdownguide.org/cheat-sheet/](https://www.markdownguide.org/cheat-sheet/)):
-
----
-
-# Heading1
-## Heading2
-### Heading3
-#### Heading4
-##### Heading5
-###### Heading6
-
-**bold text**
-
-*italicized text*
-
-~~strikethrough text~~
-
-Ordered List:
-1. First item
-2. Second item
-3. Third item
-
-Unordered List:
-- First item
-- Second item
-- Third item
-
-`short code block`
-
-```
-extended code block
-fun() {
-  return 0
-}
-```
-
-Link:  
-[linked text](https://www.example.com)
-
-
-Image with url:  
-![image description](https://dm-gy-6063-2024f-b.github.io/assets/homework/02/clark-espaco-modulado-00.jpg)
-
-
-Image on repo:  
-![image description](./file-name.jpg)
-
-
-To start a new line, add two spaces at the end of a line, like this:  
-this is a new line.
-
-
-To start a new paragraph, leave an empty line between two lines of text.
-
-This is a new paragraph.
+Furhter applications of this project can be used for educational purposes as it amplifies what phototropism does. I
+think it would be fun to explore how children can respond to this kind of interactive learning tool.
